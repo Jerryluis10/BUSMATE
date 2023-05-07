@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="tracker-activation.css">
+    <script src="tm.js"></script>
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="img/IMG-20230505-WA0040.jpg" alt="Splash Image" class="image-screen">
+      </div>
+      <div id="content">
+        <form method="post" action="payment.php">
+            <div class="user">
+             <input type="text" placeholder="Name" required><br>
+             
+                
+                 <select name="" id="" required>
+                    <option value="Subscription Package">Subscription Package</option>
+                    <option value="a week">a week</option>
+                    <option value="a month">a month</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="a year">a year</option>
+                 </select>
+           
+            </div>
+            <div class="border">
+             <label class="payment" for="payment">Payment Details:</label> <div class="check-box" ><input class="ch-box" type="checkbox"> <label class="rem-me" for="">Remember</label></div><br>
+             <label class="card-num" for="">Card Number</label>
+             <div class="valid">
+                <input type="number" name="" id="card-num" placeholder="Valid Card Number" required>
+                <i class="fas fa-lock"></i>
+             </div>
+             <div>
+              <div class="expire">
+                  <label for="" style="margin-top: 23%;">EXPIRY DATE</label><br>
+                 <div class="exp-date">
+                     <input type="number" placeholder="MM" required>
+                     <input class="year" type="number" placeholder="YY" required>
+                 </div>
+              </div>
+              <div class="cv-code">
+                  <label for="">CV CODE</label><br>
+                  <input type="number" placeholder="CV" required>
+              </div>
+             </div>
+            </div>
+            <button type="submit">PAY</button>
+         </form>
+
+         <form method="post" action="transaction.php">
+            <div class="users">
+             <h2>Pay using USSD code</h2>
+             <input type="text" placeholder="Name" required>
+             <select name="" id="" required>
+                <option value="">BANK</option>
+                <option value="FIRST BANK">FIRST BANK</option>
+                <option value="GTB BANK">GTB BANK</option>
+                <option value="UBA BANK">UBA BANK</option>
+                <option value="STERLING BANK">STERLING BANK</option>
+                <option value="ACCESS BANK">ACCESS BANK</option>
+                <option value="ZENITH BANK">ZENITH BANK</option>
+                <option value="ECO BANK">ECO BANK</option>
+                <option value="ECO BANK">ECO BANK</option>
+                <option value="POLARIS BANK">POLARIS BANK</option>
+                <option value="WEMA BANK">WEMA BANK</option>
+                <option value="FIDELITY BANK">FIDELITY BANK</option>
+             </select>
+                 <select name="" id="" required>
+                    <option value="Subscription Package">Subscription Package</option>
+                    <option value="a week">a week</option>
+                    <option value="a month">a month</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="a year">a year</option>
+                 </select>
+           
+            </div>
+            <button type="submit">Generate USSD</button>
+         </form>
+      </div>
+
+
+</body>
+</html>

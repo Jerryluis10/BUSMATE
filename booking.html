@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="booking.css">
+    <script src="tm.js"></script>
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="img/IMG-20230505-WA0040.jpg" alt="Splash Image" class="image-screen">
+      </div>
+      <div id="content">
+        <form method="post" action="">
+            <div class="user">
+             <input type="text" placeholder="Name" required><br>
+             
+                 <select name="" id="" required>
+                     <option value="">Bus-id</option>
+                     <option value="">1</option>
+                     <option value="">2</option>
+                     <option value="">3</option>
+                     <option value="">4</option>
+                     <option value="">5</option>
+                     <option value="">6</option>
+                 </select><br>
+                 <select name="" id="" required>
+                     <option value="">Sit Number</option>
+                     <option value="">1</option>
+                     <option value="">2</option>
+                     <option value="">3</option>
+                     <option value="">4</option>
+                     <option value="">5</option>
+                     <option value="">6</option>
+                     <option value="">7</option>
+                 </select>
+           
+            </div>
+            <div class="border">
+             <label class="payment" for="payment">Payment Details:</label> <div class="check-box" ><input class="ch-box" type="checkbox"> <label class="rem-me" for="">Remember</label></div><br>
+             <label class="card-num" for="">Card Number</label>
+             <div class="valid">
+                <input type="number" name="" id="card-num" placeholder="Valid Card Number" required>
+                <i class="fas fa-lock"></i>
+             </div>
+             <div>
+              <div class="expire">
+                  <label for="" style="margin-top: 23%;">EXPIRY DATE</label><br>
+                 <div class="exp-date">
+                     <input type="number" placeholder="MM" required>
+                     <input class="year" type="number" placeholder="YY" required>
+                 </div>
+              </div>
+              <div class="cv-code">
+                  <label for="">CV CODE</label><br>
+                  <input type="number" placeholder="CV" required>
+              </div>
+             </div>
+            </div>
+            <button type="submit">PAY</button>
+         </form>
+      </div>
+</body>
+</html>

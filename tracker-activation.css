@@ -1,0 +1,181 @@
+#splash-screen {
+    position: fixed;
+    top: 3%;
+    left: 35%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #splash-screen img {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 200px;
+    background-color: transparent;
+    align-items: center;
+  }
+  #content {
+    display: none;
+  }
+  
+.user{
+    display: flex;
+    align-items: center;
+    margin-left: -4%;
+}
+.user input[type="text"]{
+    padding: 11px;
+    margin-top: 10%;
+    width: 36%;
+    margin-left: 6%;
+    font-weight: 700;
+    border: 2px solid #008000;
+    border-radius: 5px;
+}
+.user select{
+    padding: 2px;
+    padding-left: 2px;
+    margin-top: 9.7%;
+    margin-left: 7%;
+    width:39%;
+    height: 4.6vh;
+    font-weight: 700;
+    border: 2px solid #008000;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    margin-top: 15%;
+}
+.users input[type="text"]{
+    padding: 11px;
+    margin-top: 1%;
+    width: 23%;
+    margin-left: 2%;
+    font-weight: 700;
+    border: 2px solid #008000;
+    border-radius: 5px;
+}
+.users select{
+    padding: 2px;
+    padding-left: 2px;
+    margin-top: 9.7%;
+    margin-left: 2%;
+    width:27.7%;
+    height: 4.6vh;
+    font-weight: 700;
+    border: 2px solid #008000;
+    border-radius: 5px;
+}
+.select-opt{
+    display: flex;
+    text-align: center;
+}
+.border{
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 87%;
+}
+.payment{
+    margin-left: -5%;
+    font-size: 15px;
+    font-weight: 700;
+}
+.check-box{
+    align-items: center;
+    display: flex;
+    width: 40%;
+    text-align: left;
+    margin-left: 53%;
+    margin-top: -5.5%;
+}
+.ch-box{
+    margin-left: 53%;
+}
+.rem-me{
+    font-weight: 700;
+}
+.card-num{
+    margin-top: 3%;
+    margin-left: -5%;
+    font-weight: 700;
+}
+.valid{
+    display: flex;
+    align-items: center;
+}
+#card-num{
+    width: 100%;
+    padding: 11px;
+    padding-left: 9px;
+    font-weight: 700;
+    border: 2px solid #008000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-left: -5%;
+    margin-top: 2%;
+}
+.fas{
+    background-color: #008000;
+    color: white;
+    width: 6%;
+    padding: 12.6px;
+    text-align: center;
+    margin-top: 2%;
+}
+.expire{
+    margin-top: 4%;
+}
+.expire label{
+    font-weight: 700;
+    margin-top: 3%;
+    margin-left: -5%;
+}
+.exp-date{
+    display: flex;
+    align-items: center;
+}
+.exp-date input{
+    width: 23%;
+    padding: 5px;
+    margin-left: -5%;
+    margin-top: 2%;
+    border: 2px solid #008000;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.exp-date input:nth-child(2){
+    margin-left: 4%;
+}
+.cv-code{
+    margin-left: 70%;
+    margin-top: -16.3%;
+    font-weight: 700;
+}
+.cv-code input{
+    width: 88%;
+    padding: 5px;
+    border: 2px solid #008000;
+    border-radius: 4px;
+    margin-top: 5%;
+}
+button{
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 3%;
+    width: 91.5%;
+    padding: 7px;
+    border: 2px solid #008000;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #008000;
+    color: white;
+}
