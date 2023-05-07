@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+<style>
+        .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+.fa{
+    text-align: center;
+    font-size: 30px;
+    
+    padding-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 5px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 28%;
+}
+
+
+
+
+.admin {
+  background-color: rgba(98, 0, 255, 0.641);
+}
+
+.time-table {
+  background-color: rgba(0, 0, 255, 0.647);
+}
+
+.bus-booking {
+  background-color: rgba(0, 255, 0, 0.652);
+}
+
+</style>
+<script>
+        const carousel = document.querySelector('.carousel-wrapper');
+const buttons = document.querySelectorAll('.button');
+
+let buttonWidth = buttons[0].offsetWidth;
+let buttonMargin = parseInt(getComputedStyle(buttons[0]).marginRight);
+
+let currentIndex = 0;
+let targetIndex = 0;
+
+function setActiveButton(index) {
+  buttons[currentIndex].classList.remove('active');
+  buttons[index].classList.add('active');
+  currentIndex = index;
+}
+
+function moveCarousel() {
+  carousel.style.transform = `translateX(-${buttonWidth + buttonMargin} * ${targetIndex})`;
+}
+
+function handleButtonClick(e) {
+  e.preventDefault();
+  const buttonIndex = Array.from(buttons).indexOf(e.target);
+  if (buttonIndex !== currentIndex) {
+    targetIndex = buttonIndex;
+    setActiveButton(buttonIndex);
+    moveCarousel();
+  }
+}
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', handleButtonClick);
+});
+
+window.addEventListener('resize', () => {
+  buttonWidth = buttons[0].offsetWidth;
+  buttonMargin = parseInt(getComputedStyle(buttons[0]).marginRight);
+  moveCarousel();
+});
+
+</script>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <a href="admin.html" class="button admin active"><i class="fa fa-user"></i><br>
+          <span style="font-size: 20px;">Admin Login</span><br><br> Access system with administrator privileges.<br><br> <span style="text-decoration: underline;">Click here</span></a>
+          <a href="#" class="button time-table"><i class="fa fa-table"></i><br>
+          <span style="font-size: 20px;">time-table</span><br><br>See the bus schedule in detail.<br><br> <span style="text-decoration: underline;">Click here</span></a>
+          <a href="#" class="button bus-booking"><i class="fa fa-bus"></i><br>
+            <span style="font-size: 20px;">Bus-booking</span><br><br>Make a reservation for your journey.<br><br> <span style="text-decoration: underline;">Click here</span></a>
+            
+          
+        </div>
+      </div>      
+</body>
+</html>
